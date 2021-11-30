@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #191920;
+    font-size: 60px;
+    font-family: Times;
+    text-align: center;
+}
+
+header, 
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+section {
+    background-color: #8AB6D6;
+}
+
+header {
+    background-color: #FBE0C4;
+    position: relative;
+}
+
+header h1 {
+    border: 5px solid #191920;
+    padding: 10px 50px;
+    margin: 50px;
+    z-index: 1;
+}
+
+.ondas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@keyframes onda1 {
+    from {
+        transform: translateX(-2000px);
+    }
+}
+
+@keyframes onda2 {
+    from {
+        transform: translateX(-1800px);
+    }
+}
+
+@keyframes onda3 {
+    from {
+        transform: translateX(-1600px);
+    }
+}
+
+.onda-1 {
+    animation: onda1 3s ease-in-out infinite alternate;
+}
+
+.onda-2 {
+    animation: onda2 3s 1.2s ease-in-out infinite alternate;
+}
+
+.onda-3 {
+    animation: onda3 3s 0.7s ease-in-out infinite alternate;
+}
